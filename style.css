@@ -1,0 +1,127 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+.section-box {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+
+.mq-title {
+    font-size: 20px;
+    color: #2c3e50;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mq-text {
+    font-size: 14px;
+    text-align: center;
+    color: #555;
+    line-height: 1.5;
+}
+
+.mq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.mq-box {
+    background: linear-gradient(135deg, #4e54c8 0%, #8f94fb 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.mq-box:hover {
+    transform: translateY(-3px);
+}
+
+.bs-custom-col {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.portfolio-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+    border-left: 4px solid #4e73df;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.sidebar-box {
+    background: #ffffff;
+    border: 1px solid #e3e6f0;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .mq-title { 
+        font-size: 26px; 
+    }
+    .mq-text { 
+        font-size: 15px; 
+    }
+
+    .mq-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .mq-box {
+        flex: 0 0 48%;
+    }
+
+    .tablet-highlight {
+        border: 2px dashed #4e73df;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .mq-title { 
+        font-size: 32px; 
+    }
+    .mq-text { 
+        font-size: 16px; 
+    }
+
+    .mq-container {
+        flex-wrap: nowrap;
+    }
+    
+    .mq-box {
+        flex: 1;
+    }
+
+    .section-box {
+        padding: 40px 50px;
+    }
+}
